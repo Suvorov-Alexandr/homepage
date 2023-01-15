@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
@@ -267,4 +271,46 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+.box {
+  text-align: center;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(-1deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.btn {
+  padding: 12px;
+  border-radius: 5px;
+  border: 3px solid var(--text-decoration-color);
+  text-align: center;
+  background: var(--border-color);
+  cursor: pointer;
+  color: #2700ff;
+  font-size: 14px;
+  transition: 0.5s all ease-in-out;
+}
+
+.btn:hover,
+:focus {
+  background: aquamarine;
+  border: 3px solid aqua;
+  color: #680000;
 }
